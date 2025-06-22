@@ -1,47 +1,36 @@
+# === sbt / Scala ===
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+.bsp/
+.metals/
+.scala-build/
+.cache/
+.history/
+lib_managed/
+src_managed/
+project/target/
+project/project/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# === IntelliJ IDEA ===
+.idea/
 *.iws
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# === VS Code ===
 .vscode/
 
-### Mac OS ###
+# === OS Files ===
 .DS_Store
 
-### Scala ###
-.bsp/
+# === Build Tools ===
+# You had maven rules — keep only if you're using Maven with Scala
+!.mvn/wrapper/maven-wrapper.jar
+
+# === Optional: Only if using Eclipse or NetBeans ===
+# (Delete these if you're not using them)
+#.classpath
+#.project
+#.settings/
+#bin/
+#build/
